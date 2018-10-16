@@ -1,0 +1,48 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' menu select
+zstyle :compinstall filename '/home/alecsnyder/.zshrc'
+autoload -U compinit promptinit zcalc
+setopt prompt_subst
+compinit
+promptinit
+autoload -U colors && colors
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
+unsetopt beep
+setopt autocd correct completealiases HIST_IGNORE_DUPS
+
+function parse_git_branch
+{
+	ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+	echo ${ref#refs/heads/}
+}
+
+PROMPT="[%{$fg[red]%}%n%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%} git %{$fg[green]%}\$(parse_git_branch)%{$reset_color%}]
+%{$fg[yellow]%}>>>%{$reset_color%} "
+
+alias pac='sudo pacman -S'
+alias pacr='sudo pacman -Rs'
+alias start='startx'
+alias pacc='sudo pacman -Scc'
+alias pacrns="sudo pacman -Rns"
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias ls='ls --color=auto' 
+alias e='emacs '
+alias mdisk='udisks --mount '
+alias rdisk='udisks --unmount '
+alias ldisk='udisks --enumerate'
+alias gpush='git push origin master'
+alias gpull='git pull origin master'
+bindkey -v
+alias vi='vim'
+alias star='startx'
+alias systemctl='sudo systemctl'
+alias pacman='sudo pacman'
+alias chmox='chmod +x'
+date "+%a %h %e %Y %l:%M:%S %p %Z"
+
