@@ -44,5 +44,6 @@ alias star='startx'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
 alias chmox='chmod +x'
+alias gclone='source gclone'
 date "+%a %h %e %Y %l:%M:%S %p %Z"
 
