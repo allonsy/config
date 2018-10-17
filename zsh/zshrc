@@ -25,9 +25,10 @@ function parse_git_branch
 PROMPT="[%{$fg[red]%}%n%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%} git %{$fg[green]%}\$(parse_git_branch)%{$reset_color%}]
 %{$fg[yellow]%}>>>%{$reset_color%} "
 
+alias upd='arch_update.sh'
 alias pac='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
-alias start='startx'
+alias start='ssh-agent startx'
 alias pacc='sudo pacman -Scc'
 alias pacrns="sudo pacman -Rns"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
@@ -40,7 +41,6 @@ alias gpush='git push origin master'
 alias gpull='git pull origin master'
 bindkey -v
 alias vi='vim'
-alias star='startx'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
 alias chmox='chmod +x'
