@@ -22,6 +22,7 @@ function parse_git_branch
 	echo ${ref#refs/heads/}
 }
 
+EDITOR=vim
 PROMPT="[%{$fg[red]%}%n%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%} git %{$fg[green]%}\$(parse_git_branch)%{$reset_color%}]
 %{$fg[yellow]%}>>>%{$reset_color%} "
 
@@ -39,7 +40,7 @@ alias rdisk='udisks --unmount '
 alias ldisk='udisks --enumerate'
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
-bindkey -v
+bindkey -e
 alias vi='vim'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
