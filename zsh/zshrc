@@ -1,5 +1,7 @@
 # The following lines were added by compinstall
 
+
+fpath=(~/.config/zsh/completions $fpath)
 zstyle ':completion:*' menu select
 zstyle :compinstall filename '/home/alecsnyder/.zshrc'
 autoload -U compinit promptinit zcalc
