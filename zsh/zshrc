@@ -37,8 +37,8 @@ alias pacrns="sudo pacman -Rns"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias ls='ls --color=auto' 
 alias e='emacs '
-alias mdisk='udisks --mount '
-alias rdisk='udisks --unmount '
+alias mdisk='udisksctl mount -b'
+alias rdisk='udisksctl unmount -b'
 alias ldisk='udisks --enumerate'
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
