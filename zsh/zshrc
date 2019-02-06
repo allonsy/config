@@ -31,7 +31,7 @@ PROMPT="[%{$fg[red]%}%n%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%} git %
 alias upd='arch_update.sh'
 alias pac='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
-alias start='ssh-agent startx'
+alias start='startup'
 alias pacc='sudo pacman -Scc'
 alias pacrns="sudo pacman -Rns"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
@@ -49,4 +49,4 @@ alias pacman='sudo pacman'
 alias chmox='chmod +x'
 alias gclone='source gclone'
 date "+%a %h %e %Y %l:%M:%S %p %Z"
-
+. /home/alecsnyder/.nix-profile/etc/profile.d/nix.sh
