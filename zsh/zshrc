@@ -1,7 +1,6 @@
 # The following lines were added by compinstall
 
 
-fpath=(~/.config/zsh/completions $fpath)
 zstyle ':completion:*' menu select
 zstyle :compinstall filename '/home/alecsnyder/.zshrc'
 autoload -U compinit promptinit zcalc
@@ -22,6 +21,10 @@ function parse_git_branch
 {
 	ref=$(git symbolic-ref HEAD 2> /dev/null) || return
 	echo ${ref#refs/heads/}
+}
+
+function gclone {
+    cd `gclone-bin $@`
 }
 
 EDITOR=vim
@@ -47,6 +50,5 @@ alias vi='vim'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
 alias chmox='chmod +x'
-alias gclone='source gclone'
 date "+%a %h %e %Y %l:%M:%S %p %Z"
 . /home/alecsnyder/.nix-profile/etc/profile.d/nix.sh
