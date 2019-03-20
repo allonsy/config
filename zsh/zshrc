@@ -35,7 +35,7 @@ alias upd='arch_update.sh'
 alias pac='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
 alias start='startup'
-alias pacc='sudo pacman -Scc'
+alias pacc='sudo pacman -Sc'
 alias pacrns="sudo pacman -Rns"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias ls='ls --color=auto' 
