@@ -50,5 +50,6 @@ alias vi='vim'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
 alias chmox='chmod +x'
+gpg-connect-agent updatestartuptty /bye > /dev/null
 date "+%a %h %e %Y %l:%M:%S %p %Z"
 . /home/alecsnyder/.nix-profile/etc/profile.d/nix.sh
