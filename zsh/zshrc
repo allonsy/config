@@ -18,8 +18,8 @@ unsetopt beep
 setopt autocd correct completealiases HIST_IGNORE_DUPS
 
 bindkey -v
-bindkey '^P' up-history
-bindkey '^N' down-history
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
 
 function parse_git_branch
 {
@@ -63,5 +63,6 @@ alias vi='vim'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
 alias chmox='chmod +x'
+alias tmpdir='cd $(mktemp -d)'
 date "+%a %h %e %Y %l:%M:%S %p %Z"
 . /home/alecsnyder/.nix-profile/etc/profile.d/nix.sh
