@@ -1,0 +1,130 @@
+# Maintainer: allonsy
+# Global PKGBUILD for my installs
+
+
+pkgname=allonsy-install-common
+pkgver=2019.12.09
+pkgrel=5
+pkgdesc='All common packages for basic installs'
+arch=('any')
+license=('MIT')
+depends=(
+    # base packages
+    'base'
+    'btrfs-progs'
+    'dosfstools'
+    'e2fsprogs'
+    'linux'
+    'ntfs-3g'
+
+    # development
+    'asp'
+    'autoconf'
+    'automake'
+    'docker'
+    'docker-compose'
+    'fakeroot'
+    'gcc'
+    'git'
+    'git-lfs'
+    'go'
+    'go-tools'
+    'make'
+    'man-db'
+    'pacman-contrib'
+    'patch'
+    'python'
+    'rustup'
+    'sudo'
+    'tmux'
+    'which'
+    'wine'
+    'zsh'
+
+    # languages
+    'go'
+    'jdk-openjdk'
+    'python'
+    'rustup'
+
+    # editors
+    'vim'
+
+    # security
+    'ccid'
+    'cryptsetup'
+    'firejail'
+    'gnupg'
+    'openssh'
+    'pass'
+    'pcsclite'
+    'yubikey-manager'
+    'yubikey-personalization'
+
+    # xorg
+    'mesa'
+    'xorg-font-util'
+    'xorg-fonts-100dpi'
+    'xorg-fonts-75dpi'
+    'xorg-mkfontscale'
+    'xorg-server'
+    'xorg-server-xwayland'
+    'xorg-setxkbmap'
+    'xorg-xauth'
+    'xorg-xbacklight'
+    'xorg-xev'
+    'xorg-xhost'
+    'xorg-xinit'
+    'xorg-xmodmap'
+    'xorg-xrefresh'
+
+    # graphical
+    'arandr'
+    'eog'
+    'evince'
+    'firefox'
+    'i3-wm'
+    'i3blocks'
+    'i3lock'
+    'i3status'
+    'imagemagick'
+    'kitty'
+    'libreoffice-fresh'
+    'rofi'
+    'ttf-dejavu'
+    'ttf-liberation'
+    'vlc'
+    'wireshark-qt'
+
+    # networking
+    'bind-tools'
+    'dhcpcd'
+    'gnu-netcat'
+    'net-tools'
+    'netctl'
+    'nmap'
+    'transmission-gtk'
+    'ufw'
+    'wget'
+    'wireguard-arch'
+    'wireguard-tools'
+    'wireless_tools'
+    'wpa_supplicant'
+
+    #misc
+    'alsa-utils'
+    'arch-install-scripts'
+    'aws-cli'
+    'grub'
+    'htop'
+    'intel-ucode'
+    'ntp'
+    'os-prober'
+    'parted'
+    'rsync'
+    'udisks2'
+    'unzip'
+    'youtube-dl'
+    'zip'
+
+)
