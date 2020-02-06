@@ -9,6 +9,7 @@ git config --global core.editor vim
 # aliases
 echo "Setting aliases"
 git config --global alias.co checkout
+git config --global alias.cob 'checkout -b'
 git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.br branch
