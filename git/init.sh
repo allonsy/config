@@ -6,6 +6,10 @@ git config --global user.name "Alec Snyder"
 git config --global user.email "linuxbash8@gmail.com"
 git config --global core.editor vim
 
+# merge conflict strategies
+echo "Setting merge conflict strategies"
+git config --global merge.conflictstyle diff3
+
 # aliases
 echo "Setting aliases"
 git config --global alias.co checkout
