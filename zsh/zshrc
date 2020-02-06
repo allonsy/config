@@ -65,4 +65,3 @@ alias pacman='sudo pacman'
 alias chmox='chmod +x'
 alias tmpdir='cd $(mktemp -d)'
 date "+%a %h %e %Y %l:%M:%S %p %Z"
-. /home/alecsnyder/.nix-profile/etc/profile.d/nix.sh
