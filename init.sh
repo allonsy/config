@@ -3,7 +3,7 @@
 if [ $# = 0 ]; then
     CONFIG_DIRS=`ls`
 else
-    CONFIG_DIRS=$@
+    CONFIG_DIRS="$@"
 fi
 
 for CONFIG_DIR in $CONFIG_DIRS; do
