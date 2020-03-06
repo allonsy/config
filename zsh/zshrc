@@ -17,9 +17,9 @@ setopt appendhistory
 unsetopt beep
 setopt autocd correct completealiases HIST_IGNORE_DUPS
 
-bindkey -v
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward
+bindkey -e
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
 
 function parse_git_branch
 {
@@ -36,7 +36,7 @@ function zle-line-init zle-keymap-select {
     INSERT_CARETS="%{$fg[yellow]%}I>>%{$reset_color%} "
     STANDARD_CARETS="%{$fg[yellow]%}>>>%{$reset_color%} "
     PROMPT="[%{$fg[red]%}%n%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%} git %{$fg[green]%}\$(parse_git_branch)%{$reset_color%}]
-${${KEYMAP/vicmd/$NORMAL_CARETS}/(main|viins)/$INSERT_CARETS}"
+$STANDARD_CARETS"
     zle reset-prompt
 }
 
