@@ -45,8 +45,6 @@ zle -N zle-keymap-select
 export KEYTIMEOUT=1
 export CURRENT_PROJECT=~/Projects/git/github.com/Originate/talon-detector
 EDITOR=vim
-source ~/.config/nnn/setup_nnn.zsh
-
 alias upd='arch_update.sh'
 alias pac='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
